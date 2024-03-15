@@ -1,27 +1,41 @@
 {
-  "name": "MFitness",
-  "version": "1.0.0",
-  "description": "MFitness reponsive webite build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations.",
-  "main": "index.html",
+  "name": "gym",
+  "version": "0.0.0",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.css -o css/style.css",
-    "parcel": "parcel build index.html -d dist",
-    "build": "npm run prefix:css && npm run parcel",
-    "dev": "parcel index.html"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
-  "author": "Manoranjan",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "node-sass": "^5.0.0",
-    "parcel": "^2.0.0-beta.2",
-    "parcel-bundler": "^1.12.5",
-    "postcss": "^8.2.14",
-    "postcss-cli": "^8.3.1"
-  },
+  "private": true,
   "dependencies": {
-    "aos": "^3.0.0-beta.6",
-    "leaflet": "^1.7.1"
+    "@angular/animations": "^15.2.0",
+    "@angular/common": "^15.2.0",
+    "@angular/compiler": "^15.2.0",
+    "@angular/core": "^15.2.0",
+    "@angular/forms": "^15.2.0",
+    "@angular/material": "^15.2.9",
+    "@angular/platform-browser": "^15.2.0",
+    "@angular/platform-browser-dynamic": "^15.2.0",
+    "@angular/router": "^15.2.0",
+    "nodemailer": "^6.9.12",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.12.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^15.2.6",
+    "@angular/cli": "~15.2.6",
+    "@angular/compiler-cli": "^15.2.0",
+    "@types/jasmine": "~4.3.0",
+    "@types/nodemailer": "^6.4.14",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~4.9.4"
   }
 }
